@@ -1,0 +1,19 @@
+<suite name="Suite">
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Test">
+  
+    <classes>
+      <class name="scripts.VerifyVersion"/>
+      <class name="scripts.VerifyInvalidLogin"/>
+      <methods>
+      <include name=""/>
+      <exclude name=""/>
+      </methods>
+      <class name="scripts.RaviTest"/>
+      <class name="scripts.VerifyLogin"/>
+    </classes>
+  </test> 
+</suite> 

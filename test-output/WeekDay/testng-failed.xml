@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WeekDay]">
+  <test name="Windows10Chrome56(failed)">
+    <parameter name="node" value="http://192.168.43.45:4444/wd/hub"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="scripts.RaviTest">
+        <methods>
+          <include name="openApplication"/>
+          <include name="testRavi"/>
+        </methods>
+      </class> <!-- scripts.RaviTest -->
+      <class name="scripts.VerifyInvalidLogin">
+        <methods>
+          <include name="testVerifyInvalidLogin"/>
+        </methods>
+      </class> <!-- scripts.VerifyInvalidLogin -->
+      <class name="scripts.VerifyLogin">
+        <methods>
+          <include name="testValidLogin"/>
+        </methods>
+      </class> <!-- scripts.VerifyLogin -->
+      <class name="scripts.VerifyVersion">
+        <methods>
+          <include name="testVerifyVersion"/>
+        </methods>
+      </class> <!-- scripts.VerifyVersion -->
+    </classes>
+  </test> <!-- Windows10Chrome56(failed) -->
+</suite> <!-- Failed suite [WeekDay] -->

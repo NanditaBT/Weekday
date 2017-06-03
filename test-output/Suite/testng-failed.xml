@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="generics.TestNGListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="scripts.VerifyLogin">
+        <methods>
+          <include name="testValidLogin"/>
+        </methods>
+      </class> <!-- scripts.VerifyLogin -->
+      <class name="scripts.RaviTest">
+        <methods>
+          <include name="testRavi"/>
+        </methods>
+      </class> <!-- scripts.RaviTest -->
+      <class name="scripts.VerifyVersion">
+        <methods>
+          <include name="testVerifyVersion"/>
+          <include name="openApplication"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- scripts.VerifyVersion -->
+      <class name="scripts.VerifyInvalidLogin">
+        <methods>
+          <include name="testVerifyInvalidLogin"/>
+        </methods>
+      </class> <!-- scripts.VerifyInvalidLogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
